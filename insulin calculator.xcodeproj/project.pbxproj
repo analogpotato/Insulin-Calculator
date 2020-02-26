@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF0A4461240607AF00884F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0A4460240607AF00884F00 /* AppDelegate.swift */; };
+		CF0A4463240607AF00884F00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0A4462240607AF00884F00 /* SceneDelegate.swift */; };
+		CF0A4465240607AF00884F00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0A4464240607AF00884F00 /* ViewController.swift */; };
+		CF0A4468240607AF00884F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0A4466240607AF00884F00 /* Main.storyboard */; };
+		CF0A446B240607AF00884F00 /* insulin_calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF0A4469240607AF00884F00 /* insulin_calculator.xcdatamodeld */; };
+		CF0A446D240607B100884F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0A446C240607B100884F00 /* Assets.xcassets */; };
+		CF0A4470240607B100884F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0A446E240607B100884F00 /* LaunchScreen.storyboard */; };
+		CF0A447B240607B100884F00 /* insulin_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0A447A240607B100884F00 /* insulin_calculatorTests.swift */; };
+		CF0A4486240607B100884F00 /* insulin_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0A4485240607B100884F00 /* insulin_calculatorUITests.swift */; };
+		CF0A4496240611DD00884F00 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0A4495240611DD00884F00 /* HealthKit.framework */; };
+		CF0A4498240612E400884F00 /* HealthKitSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0A4497240612E400884F00 /* HealthKitSetup.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF0A4477240607B100884F00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF0A4455240607AF00884F00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF0A445C240607AF00884F00;
+			remoteInfo = "insulin calculator";
+		};
+		CF0A4482240607B100884F00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF0A4455240607AF00884F00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF0A445C240607AF00884F00;
+			remoteInfo = "insulin calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF0A445D240607AF00884F00 /* insulin calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "insulin calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0A4460240607AF00884F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF0A4462240607AF00884F00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF0A4464240607AF00884F00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF0A4467240607AF00884F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF0A446A240607AF00884F00 /* insulin_calculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = insulin_calculator.xcdatamodel; sourceTree = "<group>"; };
+		CF0A446C240607B100884F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF0A446F240607B100884F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF0A4471240607B100884F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF0A4476240607B100884F00 /* insulin calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "insulin calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0A447A240607B100884F00 /* insulin_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insulin_calculatorTests.swift; sourceTree = "<group>"; };
+		CF0A447C240607B100884F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF0A4481240607B100884F00 /* insulin calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "insulin calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0A4485240607B100884F00 /* insulin_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insulin_calculatorUITests.swift; sourceTree = "<group>"; };
+		CF0A4487240607B100884F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF0A4493240611DD00884F00 /* insulin calculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "insulin calculator.entitlements"; sourceTree = "<group>"; };
+		CF0A4495240611DD00884F00 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		CF0A4497240612E400884F00 /* HealthKitSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetup.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF0A445A240607AF00884F00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0A4496240611DD00884F00 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF0A4473240607B100884F00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF0A447E240607B100884F00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF0A4454240607AF00884F00 = {
+			isa = PBXGroup;
+			children = (
+				CF0A445F240607AF00884F00 /* insulin calculator */,
+				CF0A4479240607B100884F00 /* insulin calculatorTests */,
+				CF0A4484240607B100884F00 /* insulin calculatorUITests */,
+				CF0A445E240607AF00884F00 /* Products */,
+				CF0A4494240611DD00884F00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF0A445E240607AF00884F00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF0A445D240607AF00884F00 /* insulin calculator.app */,
+				CF0A4476240607B100884F00 /* insulin calculatorTests.xctest */,
+				CF0A4481240607B100884F00 /* insulin calculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF0A445F240607AF00884F00 /* insulin calculator */ = {
+			isa = PBXGroup;
+			children = (
+				CF0A4493240611DD00884F00 /* insulin calculator.entitlements */,
+				CF0A4460240607AF00884F00 /* AppDelegate.swift */,
+				CF0A4462240607AF00884F00 /* SceneDelegate.swift */,
+				CF0A4464240607AF00884F00 /* ViewController.swift */,
+				CF0A4466240607AF00884F00 /* Main.storyboard */,
+				CF0A446C240607B100884F00 /* Assets.xcassets */,
+				CF0A446E240607B100884F00 /* LaunchScreen.storyboard */,
+				CF0A4471240607B100884F00 /* Info.plist */,
+				CF0A4497240612E400884F00 /* HealthKitSetup.swift */,
+				CF0A4469240607AF00884F00 /* insulin_calculator.xcdatamodeld */,
+			);
+			path = "insulin calculator";
+			sourceTree = "<group>";
+		};
+		CF0A4479240607B100884F00 /* insulin calculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF0A447A240607B100884F00 /* insulin_calculatorTests.swift */,
+				CF0A447C240607B100884F00 /* Info.plist */,
+			);
+			path = "insulin calculatorTests";
+			sourceTree = "<group>";
+		};
+		CF0A4484240607B100884F00 /* insulin calculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF0A4485240607B100884F00 /* insulin_calculatorUITests.swift */,
+				CF0A4487240607B100884F00 /* Info.plist */,
+			);
+			path = "insulin calculatorUITests";
+			sourceTree = "<group>";
+		};
+		CF0A4494240611DD00884F00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF0A4495240611DD00884F00 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF0A445C240607AF00884F00 /* insulin calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF0A448A240607B100884F00 /* Build configuration list for PBXNativeTarget "insulin calculator" */;
+			buildPhases = (
+				CF0A4459240607AF00884F00 /* Sources */,
+				CF0A445A240607AF00884F00 /* Frameworks */,
+				CF0A445B240607AF00884F00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "insulin calculator";
+			productName = "insulin calculator";
+			productReference = CF0A445D240607AF00884F00 /* insulin calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF0A4475240607B100884F00 /* insulin calculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF0A448D240607B100884F00 /* Build configuration list for PBXNativeTarget "insulin calculatorTests" */;
+			buildPhases = (
+				CF0A4472240607B100884F00 /* Sources */,
+				CF0A4473240607B100884F00 /* Frameworks */,
+				CF0A4474240607B100884F00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF0A4478240607B100884F00 /* PBXTargetDependency */,
+			);
+			name = "insulin calculatorTests";
+			productName = "insulin calculatorTests";
+			productReference = CF0A4476240607B100884F00 /* insulin calculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF0A4480240607B100884F00 /* insulin calculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF0A4490240607B100884F00 /* Build configuration list for PBXNativeTarget "insulin calculatorUITests" */;
+			buildPhases = (
+				CF0A447D240607B100884F00 /* Sources */,
+				CF0A447E240607B100884F00 /* Frameworks */,
+				CF0A447F240607B100884F00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF0A4483240607B100884F00 /* PBXTargetDependency */,
+			);
+			name = "insulin calculatorUITests";
+			productName = "insulin calculatorUITests";
+			productReference = CF0A4481240607B100884F00 /* insulin calculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF0A4455240607AF00884F00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Frank Foster";
+				TargetAttributes = {
+					CF0A445C240607AF00884F00 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					CF0A4475240607B100884F00 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CF0A445C240607AF00884F00;
+					};
+					CF0A4480240607B100884F00 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CF0A445C240607AF00884F00;
+					};
+				};
+			};
+			buildConfigurationList = CF0A4458240607AF00884F00 /* Build configuration list for PBXProject "insulin calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF0A4454240607AF00884F00;
+			productRefGroup = CF0A445E240607AF00884F00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF0A445C240607AF00884F00 /* insulin calculator */,
+				CF0A4475240607B100884F00 /* insulin calculatorTests */,
+				CF0A4480240607B100884F00 /* insulin calculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF0A445B240607AF00884F00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0A4470240607B100884F00 /* LaunchScreen.storyboard in Resources */,
+				CF0A446D240607B100884F00 /* Assets.xcassets in Resources */,
+				CF0A4468240607AF00884F00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF0A4474240607B100884F00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF0A447F240607B100884F00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF0A4459240607AF00884F00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0A4465240607AF00884F00 /* ViewController.swift in Sources */,
+				CF0A4461240607AF00884F00 /* AppDelegate.swift in Sources */,
+				CF0A446B240607AF00884F00 /* insulin_calculator.xcdatamodeld in Sources */,
+				CF0A4498240612E400884F00 /* HealthKitSetup.swift in Sources */,
+				CF0A4463240607AF00884F00 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF0A4472240607B100884F00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0A447B240607B100884F00 /* insulin_calculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF0A447D240607B100884F00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0A4486240607B100884F00 /* insulin_calculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF0A4478240607B100884F00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF0A445C240607AF00884F00 /* insulin calculator */;
+			targetProxy = CF0A4477240607B100884F00 /* PBXContainerItemProxy */;
+		};
+		CF0A4483240607B100884F00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF0A445C240607AF00884F00 /* insulin calculator */;
+			targetProxy = CF0A4482240607B100884F00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF0A4466240607AF00884F00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF0A4467240607AF00884F00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF0A446E240607B100884F00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF0A446F240607B100884F00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF0A4488240607B100884F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF0A4489240607B100884F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF0A448B240607B100884F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "insulin calculator/insulin calculator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482J99T69B;
+				INFOPLIST_FILE = "insulin calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "analogpotato.insulin-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF0A448C240607B100884F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "insulin calculator/insulin calculator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482J99T69B;
+				INFOPLIST_FILE = "insulin calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "analogpotato.insulin-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF0A448E240607B100884F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482J99T69B;
+				INFOPLIST_FILE = "insulin calculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "analogpotato.insulin-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/insulin calculator.app/insulin calculator";
+			};
+			name = Debug;
+		};
+		CF0A448F240607B100884F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482J99T69B;
+				INFOPLIST_FILE = "insulin calculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "analogpotato.insulin-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/insulin calculator.app/insulin calculator";
+			};
+			name = Release;
+		};
+		CF0A4491240607B100884F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482J99T69B;
+				INFOPLIST_FILE = "insulin calculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "analogpotato.insulin-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "insulin calculator";
+			};
+			name = Debug;
+		};
+		CF0A4492240607B100884F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482J99T69B;
+				INFOPLIST_FILE = "insulin calculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "analogpotato.insulin-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "insulin calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF0A4458240607AF00884F00 /* Build configuration list for PBXProject "insulin calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0A4488240607B100884F00 /* Debug */,
+				CF0A4489240607B100884F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF0A448A240607B100884F00 /* Build configuration list for PBXNativeTarget "insulin calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0A448B240607B100884F00 /* Debug */,
+				CF0A448C240607B100884F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF0A448D240607B100884F00 /* Build configuration list for PBXNativeTarget "insulin calculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0A448E240607B100884F00 /* Debug */,
+				CF0A448F240607B100884F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF0A4490240607B100884F00 /* Build configuration list for PBXNativeTarget "insulin calculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0A4491240607B100884F00 /* Debug */,
+				CF0A4492240607B100884F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF0A4469240607AF00884F00 /* insulin_calculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF0A446A240607AF00884F00 /* insulin_calculator.xcdatamodel */,
+			);
+			currentVersion = CF0A446A240607AF00884F00 /* insulin_calculator.xcdatamodel */;
+			path = insulin_calculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF0A4455240607AF00884F00 /* Project object */;
+}
